@@ -56,3 +56,169 @@ a:hover {
         font-size: 12px;
     }
 }
+
+/* Additional Mobile-Specific Styles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #000;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        border: 1px solid #fff;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        text-align: center;
+        display: block;
+        padding: 10px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .hamburger-menu div {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .product-line, .founders-section, .content {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section img {
+        width: 100px;
+    }
+
+    .quote-section blockquote {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        font-size: 12px;
+    }
+
+    nav ul {
+        font-size: 0.9rem;
+    }
+
+    .section img {
+        width: 80px;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fixed-image {
+        width: 200px; /* Increase size for mobile view */
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .fixed-image {
+        width: 150px; /* Slightly smaller for very small screens */
+    }
+}
+
+/* Mobile-Specific Styles for Index.html */
+@media screen and (max-width: 768px) {
+    .fixed-image {
+        width: 200px; /* Ensure right-top image is larger on mobile */
+    }
+
+    /* Remove hamburger menu on mobile */
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+/* Mobile-Specific Styles for Get_to_know_us.html */
+@media screen and (max-width: 768px) {
+    .central-video {
+        width: 100%; /* Make video full width for better visibility */
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .section {
+        width: 100%;
+    }
+}
+
+/* Mobile-Specific Styles for Our_product_line.html */
+@media screen and (max-width: 768px) {
+    .product-line {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .section img {
+        width: 100%; /* Make images responsive */
+    }
+}
+
+/* Mobile-Specific Styles for Contact_us.html */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-container, .info-container {
+        width: 100%;
+    }
+}

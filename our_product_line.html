@@ -98,6 +98,17 @@
     </style>
 <link href="style.css" rel="stylesheet"/></head>
 <body>
+<div class="hamburger-menu" onclick="toggleMenu()">
+<div></div>
+<div></div>
+<div></div>
+</div>
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector("nav ul");
+        nav.classList.toggle("show");
+    }
+</script>
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
@@ -107,27 +118,26 @@
 <li><a href="contact_us.html">Contact</a></li>
 </ul>
 </nav>
-
 <!-- Header -->
 <div class="header">
 <h1>Our Product Line</h1>
 </div>
 <!-- Product Line Sections -->
-<div class="product-line">
+<div class="product-line" style="display: flex; flex-direction: column; gap: 20px;">
 <!-- Left Section -->
-<div class="section">
+<div class="section" style="width: 100%; text-align: left; padding: 10px;">
 <img alt="Mineral Water" src="777.jpg"/>
 <h2>Mineral Water</h2>
 <p>Mineral water, pure and refreshing, quenches thirst naturally. Rich in minerals, it revitalizes, hydrates, and supports a healthy lifestyle.</p>
 </div>
 <!-- Center Section -->
-<div class="section">
+<div class="section" style="width: 100%; text-align: left; padding: 10px;">
 <img alt="Homemade snacks" src="101.jpg"/>
 <h2>Homemade snacks</h2>
 <p>Homemade snacks, crafted with love, offer wholesome flavors, fresh ingredients, and a comforting taste of tradition and care.</p>
 </div>
 <!-- Right Section -->
-<div class="section">
+<div class="section" style="width: 100%; text-align: left; padding: 10px;">
 <img alt="Jade Jewelry" src="000.png"/>
 <h2>Jade Jewelry</h2>
 <p>Jade jewelry, timeless and elegant, symbolizes purity and prosperity. Its vibrant hues reflect nature's beauty and cultural heritage.</p>

@@ -151,6 +151,17 @@
     </style>
 <link href="style.css" rel="stylesheet"/></head>
 <body>
+<div class="hamburger-menu" onclick="toggleMenu()">
+<div></div>
+<div></div>
+<div></div>
+</div>
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector("nav ul");
+        nav.classList.toggle("show");
+    }
+</script>
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
@@ -160,14 +171,13 @@
 <li><a href="contact_us.html">Contact</a></li>
 </ul>
 </nav>
-
 <div class="contact-header">
 <h1>Contact Us</h1>
 <p>Have any Interest? Reach out to us, and we’ll get back to you ASAP</p>
 </div>
-<div class="contact-container">
+<div class="contact-container" style="display: flex; flex-direction: column; gap: 20px;">
 <!-- Contact Form -->
-<div class="form-container">
+<div class="form-container" style="width: 100%;">
 <h2>Send Us a Message</h2>
 <form action="#" method="POST">
 <input name="name" placeholder="Your Name" required="" type="text"/>
@@ -177,7 +187,7 @@
 </form>
 </div>
 <!-- Contact Info -->
-<div class="info-container">
+<div class="info-container" style="width: 100%;">
 <h2>Contact Information</h2>
 <p><strong>Address:</strong> Oscar By The Sea, Tseung Kwan O, Hong Kong</p>
 <p><strong>Email:</strong> <a href="mailto:chikan213@gmail.com">chikan213@gmail.com</a></p>

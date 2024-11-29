@@ -10,6 +10,13 @@
 <link href="./Style.css" rel="stylesheet"/>
 <link href="style.css" rel="stylesheet"/></head>
 <body>
+
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector("nav ul");
+        nav.classList.toggle("show");
+    }
+</script>
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
@@ -19,7 +26,6 @@
 <li><a href="contact_us.html">Contact</a></li>
 </ul>
 </nav>
-
 <!-- 固定右上角圖片和文字 -->
 <div class="fixed-image-container">
 <img alt="S &amp; K Logo" class="fixed-image" src="./3.png"/>
