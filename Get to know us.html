@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Product Line</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('19.png'); /* Set the orange background */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff69b4; /* Bold pink title */
+            margin: 0;
+        }
+
+        .product-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .section {
+            flex: 1;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff69b4; /* Bold pink section titles */
+            margin: 20px 0 10px;
+        }
+
+        .section p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Footer with dark transparent background */
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            font-size: 1rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Our Product Line</h1>
+    </div>
+
+    <!-- Product Line Sections -->
+    <div class="product-line">
+        <!-- Left Section -->
+        <div class="section">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>A brief description of Product 1. Highlight its key features and benefits.</p>
+        </div>
+
+        <!-- Center Section -->
+        <div class="section">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>A brief description of Product 2. Highlight its key features and benefits.</p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="section">
+            <img src="product3.jpg" alt="Product 3">
+            <h2>Product 3</h2>
+            <p>A brief description of Product 3. Highlight its key features and benefits.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+    </div>
+</body>
+</html>

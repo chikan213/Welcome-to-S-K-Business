@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Founders</title>
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('12.png');
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Add a transparent overlay */
+            background-blend-mode: darken;
+            color: #f5f5f5;
+        }
+
+        .hero-section {
+            margin-top: 20px; /* Move the text downward slightly */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .founders-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px auto; /* Move down slightly */
+            max-width: 1200px;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .founder-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: rgba(77, 76, 76, 0.8); /* Set transparency for the frame */
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+        }
+
+        .founder-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(246, 244, 244, 0.5);
+        }
+
+        .founder-card img {
+            width: 50%;
+            object-fit: cover;
+        }
+
+        .founder-card h2 {
+            font-size: 1.8rem;
+            margin: 20px 0;
+            color: #ffa600;
+        }
+
+        .founder-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            padding: 0 20px 20px;
+        }
+
+        .quote-section {
+            background-color: #fb6007;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .quote-section blockquote {
+            font-size: 1rem;
+            font-style: italic;
+            margin: 0 auto;
+            max-width: 800px;
+            line-height: 1.8;
+            position: relative;
+        }
+
+        .quote-section blockquote::before {
+            content: "“";
+            font-size: 0.5rem;
+            position: absolute;
+            color: #ffa600;
+        }
+
+        .quote-section blockquote::after {
+            content: "”";
+            font-size: 1rem;
+            position: absolute;
+            right: -40px;
+            bottom: -20px;
+            color: #ffa600;
+        }
+
+        .quote-section p {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-image: url('88.png');
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <h1>Meet Our Founders</h1>
+        
+    </div>
+
+    <div class="founders-section">
+        <!-- Founder 1 -->
+        <div class="founder-card">
+            <img src="Founder4.jpg" alt="Founder 1">
+            <h2>Ken Chau</h2>
+            <p>Ken Chau is an intelligent and insightful individual with exceptional foresight. His sharp analytical skills and strategic thinking enable him to anticipate challenges and opportunities, positioning him as a visionary in achieving long-term success.</p>
+        </div>
+        <!-- Founder 2 -->
+        <div class="founder-card">
+            <img src="Founder2.jpg" alt="Founder 2">
+            <h2>Selene Tse</h2>
+            <p>Selene Tse is a vibrant, ambitious, and responsible individual known for her meticulous attention to detail. Her strong planning skills and lively personality enable her to excel in achieving goals while remaining dedicated and thoughtful in every endeavor.</p>
+        </div>
+    </div>
+
+    <div class="quote-section">
+        <blockquote>
+            "Success is built on collaboration, innovation, and a relentless pursuit of excellence."
+        </blockquote>
+        <p>- Ken Chau & Selene Tse</p>
+    </div>
+
+    <button class="back-button" onclick="window.location.href='index.html'"></button>
+</body>
+</html>
